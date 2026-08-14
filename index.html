@@ -27,13 +27,19 @@
     <main id="contenido">
       <section class="hero section-shell">
         <div class="hero__copy">
-          <p class="eyebrow">Método Freezer Inteligente</p>
+          <p class="eyebrow">Método de cocina por lotes</p>
           <h1>Recetas<br><em>saludables</em> <span>para</span><br><u>congelar.</u></h1>
           <p class="hero__lead">Deja de cocinar desde cero todas las semanas.</p>
 
+          <figure class="hero__visual hero__visual--mobile">
+            <div class="image-shadow" aria-hidden="true"></div>
+            <img src="assets/hero-cocina-saludable-mobile.webp" width="600" height="400" alt="Instructora en una cocina amplia junto a múltiples comidas saludables preparadas">
+            <div class="round-badge"><small>nuevo</small><strong>100+</strong><span>recetas</span></div>
+          </figure>
+
           <div class="hero__action">
             <a class="button" href="#ofertas">Quiero las recetas <span aria-hidden="true">→</span></a>
-            <div class="price-inline price-pending"><strong>USD</strong> <small>Precio por confirmar</small></div>
+            <div class="price-inline price-pending"><s>USD —</s> <strong>USD —</strong> <small>pago único</small></div>
           </div>
 
           <p class="hero__detail">Más de <strong>100 recetas</strong> de comidas saludables, listas y deliciosas para cocinar una vez y comer bien toda la semana.</p>
@@ -45,7 +51,7 @@
           </ul>
         </div>
 
-        <figure class="hero__visual">
+        <figure class="hero__visual hero__visual--desktop">
           <div class="image-shadow" aria-hidden="true"></div>
           <img src="assets/hero-cocina-saludable.webp" srcset="assets/hero-cocina-saludable-mobile.webp 600w, assets/hero-cocina-saludable.webp 1200w" sizes="(max-width: 700px) 88vw, (max-width: 900px) 640px, 560px" width="1200" height="800" alt="Instructora en una cocina amplia junto a múltiples comidas saludables preparadas">
           <div class="round-badge"><small>nuevo</small><strong>100+</strong><span>recetas</span></div>
@@ -67,9 +73,10 @@
 
       <section class="method dark-section">
         <div class="section-shell method__grid">
-          <div class="method__card" aria-hidden="true">
-            <span>RECETAS</span><strong>SALUDABLES</strong><em>para congelar</em><small>Método completo · 100+ recetas</small>
-          </div>
+          <figure class="method__image">
+            <div class="method__image-shadow" aria-hidden="true"></div>
+            <img src="assets/metodo-sabor.webp" width="800" height="1000" loading="lazy" alt="Postre de chocolate servido en una cocina doméstica">
+          </figure>
           <div>
             <p class="eyebrow eyebrow--light">Lo que recibes en el método</p>
             <h2>Congelar no significa renunciar al <em>sabor.</em></h2>
@@ -102,32 +109,46 @@
         </div>
 
         <div class="gallery-heading"><h3>Un aperitivo de lo que vas a cocinar.</h3><span>Galería · 12 destacados</span></div>
-        <figure class="recipe-gallery">
-          <img src="assets/galeria-recetas-1200.webp" width="1200" height="900" loading="lazy" alt="Galería de doce platos saludables preparados para la semana">
-        </figure>
+        <div class="recipe-gallery" aria-label="Doce recetas destacadas">
+          <figure><img src="assets/receta-01.webp" width="300" height="375" loading="lazy" alt="Pollo con verduras"></figure>
+          <figure><img src="assets/receta-02.webp" width="300" height="375" loading="lazy" alt="Pescado con judías verdes"></figure>
+          <figure><img src="assets/receta-03.webp" width="300" height="375" loading="lazy" alt="Sopa de lentejas y verduras"></figure>
+          <figure><img src="assets/receta-04.webp" width="300" height="375" loading="lazy" alt="Albóndigas con verduras"></figure>
+          <figure><img src="assets/receta-05.webp" width="300" height="375" loading="lazy" alt="Ensalada de quinoa y garbanzos"></figure>
+          <figure><img src="assets/receta-06.webp" width="300" height="375" loading="lazy" alt="Lasaña de verduras"></figure>
+          <figure><img src="assets/receta-07.webp" width="300" height="375" loading="lazy" alt="Curry de garbanzos con arroz"></figure>
+          <figure><img src="assets/receta-08.webp" width="300" height="375" loading="lazy" alt="Muffins saludables con arándanos"></figure>
+          <figure><img src="assets/receta-09.webp" width="300" height="375" loading="lazy" alt="Pimientos rellenos"></figure>
+          <figure><img src="assets/receta-10.webp" width="300" height="375" loading="lazy" alt="Sopa de verduras y legumbres"></figure>
+          <figure><img src="assets/receta-11.webp" width="300" height="375" loading="lazy" alt="Bocaditos de avena"></figure>
+          <figure><img src="assets/receta-12.webp" width="300" height="375" loading="lazy" alt="Postre de yogur y frutos rojos"></figure>
+        </div>
       </section>
 
       <section class="bonuses">
         <div class="section-shell">
-          <h2>La edición completa incluye <em>tres bonos.</em></h2>
+          <h2>La edición completa incluye <em>USD — en bonos.</em></h2>
           <div class="bonus-grid">
             <article>
               <div class="bonus-meta"><span>Bono 01</span><b>Incluido</b></div>
-              <div class="bonus-cover bonus-cover--one"><small>PLAN</small><strong>Porciones inteligentes</strong><span>+30 días organizados</span></div>
+              <img class="bonus-cover" src="assets/bono-01.webp" width="600" height="450" loading="lazy" alt="Portada del bono Plan de Porciones Inteligentes">
               <h3>Plan de Porciones Inteligentes</h3>
-              <ul><li>4 menús completos</li><li>Más de 30 días organizados</li><li>Lista de compras estratégica</li><li>Cero desperdicio</li></ul>
+              <ul><li>4 menús completos</li><li>Más de 30 días organizados</li><li>Lista de compras estratégica</li><li>Cero desperdicio</li><li>Alineado con las recetas del libro</li></ul>
+              <p class="bonus-price">Valor: <s>USD —</s></p>
             </article>
             <article>
               <div class="bonus-meta"><span>Bono 02</span><b>Incluido</b></div>
-              <div class="bonus-cover bonus-cover--two"><small>GUÍA</small><strong>Menús semanales</strong><span>Listos para seguir</span></div>
+              <img class="bonus-cover" src="assets/bono-02.webp" width="600" height="450" loading="lazy" alt="Portada del bono Menús Semanales Listos">
               <h3>Menús Semanales Listos</h3>
-              <ul><li>Semanas temáticas</li><li>Comidas equilibradas</li><li>Combinaciones para congelar</li><li>Formato práctico</li></ul>
+              <ul><li>Semanas temáticas</li><li>Comidas equilibradas nutricionalmente</li><li>Combinaciones para congelar</li><li>Formato práctico para imprimir o guardar</li></ul>
+              <p class="bonus-price">Valor: <s>USD —</s></p>
             </article>
             <article>
               <div class="bonus-meta"><span>Bono 03</span><b>Incluido</b></div>
-              <div class="bonus-cover bonus-cover--three"><small>GUÍA</small><strong>Organiza tu congelador</strong><span>Almacena mejor</span></div>
+              <img class="bonus-cover" src="assets/bono-03.webp" width="600" height="450" loading="lazy" alt="Portada del bono Guía de Organización del Congelador">
               <h3>Guía de Organización del Congelador</h3>
-              <ul><li>Almacenamiento profesional</li><li>Etiquetado y caducidad</li><li>Checklist de envases</li><li>Menos pérdidas</li></ul>
+              <ul><li>Almacenamiento profesional</li><li>Etiquetado y control de caducidad</li><li>Consejos para conservar cada comida</li><li>Checklist de envases adecuados</li></ul>
+              <p class="bonus-price">Valor: <s>USD —</s></p>
             </article>
           </div>
           <p class="bonus-note">Los tres bonos se entregan junto con la edición completa.</p>
@@ -143,37 +164,62 @@
         <div class="offer-grid">
           <article class="offer-card">
             <p class="eyebrow">Edición esencial</p>
-            <h3>Kit Freezer Esencial</h3>
+            <h3>Edición Esencial</h3>
             <ul class="check-list">
               <li>Más de 100 recetas saludables</li><li>Calorías y macros</li><li>Guía de utensilios y envases</li><li>Opciones sin gluten y sin lactosa</li><li>Soporte y garantía de 7 días</li><li>Acceso de por vida</li>
             </ul>
             <ul class="missing-list"><li>Plan de porciones</li><li>Menús semanales</li><li>Guía del congelador</li></ul>
-            <div class="offer-price offer-price--pending"><strong>USD —</strong><small>Precio pendiente de aprobación</small></div>
-            <span class="button button--wide button--disabled" aria-disabled="true">Checkout por configurar</span>
+            <div class="offer-price offer-price--pending"><s>USD —</s><strong>USD —</strong><small>Precio pendiente de aprobación</small></div>
+            <button class="button button--wide button--disabled" type="button" disabled>Checkout por configurar</button>
             <small>Compra segura · garantía de 7 días</small>
           </article>
 
           <article class="offer-card offer-card--featured">
             <span class="popular">Más elegido</span>
             <p class="eyebrow eyebrow--light">Edición completa</p>
-            <h3>Freezer Inteligente Premium</h3>
+            <h3>Edición Completa</h3>
             <ul class="check-list">
               <li>Más de 100 recetas saludables</li><li>Calorías y macros</li><li>Guía de utensilios y envases</li><li>Opciones sin gluten y sin lactosa</li><li>Soporte y garantía de 7 días</li><li>Acceso de por vida</li>
             </ul>
             <p class="bonus-label">+ Bonos incluidos</p>
             <ul class="check-list check-list--bonus"><li>Plan de Porciones Inteligentes</li><li>Menús semanales listos</li><li>Guía del congelador</li><li>Actualizaciones de por vida</li></ul>
-            <div class="offer-price offer-price--pending"><strong>USD —</strong><small>Precio pendiente de aprobación</small></div>
-            <span class="button button--cream button--wide button--disabled" aria-disabled="true">Checkout por configurar</span>
+            <div class="offer-price offer-price--pending"><s>USD —</s><strong>USD —</strong><small>Precio pendiente de aprobación</small></div>
+            <button class="button button--cream button--wide button--disabled" type="button" disabled>Checkout por configurar</button>
             <small>Compra segura · garantía de 7 días</small>
           </article>
         </div>
       </section>
 
-      <section class="guarantee dark-section">
-        <div class="section-shell guarantee__inner">
-          <div class="guarantee__seal"><strong>7</strong><span>días</span></div>
-          <div><p class="eyebrow eyebrow--light">Compra protegida</p><h2>Garantía de <em>7 días.</em></h2><p>Tienes 7 días para probar el contenido. Si no te gusta, solicita el reembolso dentro del plazo informado.</p></div>
-          <a class="button button--cream" href="#ofertas">Quiero mis recetas <span aria-hidden="true">→</span></a>
+      <section class="testimonials">
+        <div class="section-shell">
+          <h2>Lo que dicen quienes ya <em>cocinaron.</em></h2>
+          <div class="testimonial-grid">
+            <figure class="testimonial-card testimonial-card--pending">
+              <figcaption><img src="assets/testimonio-pendiente-01.webp" width="128" height="128" loading="lazy" alt=""><div><strong>Testimonio pendiente 01</strong><span>Ubicación pendiente</span></div></figcaption>
+              <blockquote>Contenido pendiente de autorización y verificación.</blockquote><div class="rating" aria-label="Valoración pendiente">☆☆☆☆☆</div>
+            </figure>
+            <figure class="testimonial-card testimonial-card--pending">
+              <figcaption><img src="assets/testimonio-pendiente-02.webp" width="128" height="128" loading="lazy" alt=""><div><strong>Testimonio pendiente 02</strong><span>Ubicación pendiente</span></div></figcaption>
+              <blockquote>Contenido pendiente de autorización y verificación.</blockquote><div class="rating" aria-label="Valoración pendiente">☆☆☆☆☆</div>
+            </figure>
+            <figure class="testimonial-card testimonial-card--pending">
+              <figcaption><img src="assets/testimonio-pendiente-03.webp" width="128" height="128" loading="lazy" alt=""><div><strong>Testimonio pendiente 03</strong><span>Ubicación pendiente</span></div></figcaption>
+              <blockquote>Contenido pendiente de autorización y verificación.</blockquote><div class="rating" aria-label="Valoración pendiente">☆☆☆☆☆</div>
+            </figure>
+            <figure class="testimonial-card testimonial-card--pending">
+              <figcaption><img src="assets/testimonio-pendiente-04.webp" width="128" height="128" loading="lazy" alt=""><div><strong>Testimonio pendiente 04</strong><span>Ubicación pendiente</span></div></figcaption>
+              <blockquote>Contenido pendiente de autorización y verificación.</blockquote><div class="rating" aria-label="Valoración pendiente">☆☆☆☆☆</div>
+            </figure>
+            <figure class="testimonial-card testimonial-card--pending">
+              <figcaption><img src="assets/testimonio-pendiente-05.webp" width="128" height="128" loading="lazy" alt=""><div><strong>Testimonio pendiente 05</strong><span>Ubicación pendiente</span></div></figcaption>
+              <blockquote>Contenido pendiente de autorización y verificación.</blockquote><div class="rating" aria-label="Valoración pendiente">☆☆☆☆☆</div>
+            </figure>
+            <figure class="testimonial-card testimonial-card--pending">
+              <figcaption><img src="assets/testimonio-pendiente-06.webp" width="128" height="128" loading="lazy" alt=""><div><strong>Testimonio pendiente 06</strong><span>Ubicación pendiente</span></div></figcaption>
+              <blockquote>Contenido pendiente de autorización y verificación.</blockquote><div class="rating" aria-label="Valoración pendiente">☆☆☆☆☆</div>
+            </figure>
+          </div>
+          <div class="testimonial-cta"><a class="button button--ink" href="#ofertas">Quiero mis recetas <span aria-hidden="true">→</span></a></div>
         </div>
       </section>
 
