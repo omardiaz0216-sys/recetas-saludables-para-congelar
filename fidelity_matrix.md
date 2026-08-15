@@ -1,100 +1,121 @@
-# Matriz de fidelidad estructural
+# Auditoría de fidelidad — Skill 01
 
 **RESULTADO = RECHAZADO**
 
-Evidencia revisada: HTML, CSS y bundle JavaScript públicos de `https://congelamentosaudavel.lovable.app/`, más la captura pública de referencia. El navegador visual interactivo no estuvo disponible durante esta validación.
+Evidencia: landing pública, HTML, CSS, bundle JavaScript vigente y captura disponible. El navegador visual interactivo no estuvo disponible durante esta ejecución.
 
-| ORIGINAL | RÉPLICA | ESTADO |
-|---|---|---|
-| 01 Ticker superior | Ticker superior en primera posición | PRESENTE |
-| Mensaje de edición limitada y oferta válida hoy | Slot sustituido por mensaje neutro; no existe urgencia propia aprobada | FALTANTE |
-| Acceso vitalicio | Acceso de por vida | ADAPTADO |
-| Más de 100 recetas | Más de 100 recetas | ADAPTADO |
-| Garantía de 30 días | Garantía comercial de 7 días | ADAPTADO |
-| Entrega digital inmediata | Entrega digital por correo electrónico | ADAPTADO |
-| 02 Hero | Hero en segunda posición | PRESENTE |
-| Título principal en cuatro líneas | Título equivalente en español | ADAPTADO |
-| Subtítulo tachado | Subtítulo equivalente tachado | ADAPTADO |
-| Imagen contextual desktop | Hero propio horizontal 1200 × 800 WebP | ADAPTADO |
-| Imagen móvil ubicada tras el subtítulo | Variante propia 600 × 400 WebP en la misma posición funcional | ADAPTADO |
-| Badge “nuevo / 100+ / recetas” | Badge equivalente | ADAPTADO |
-| CTA “Quero as receitas” | CTA “Quiero las recetas” hacia ofertas | ADAPTADO |
-| Precio anterior tachado R$147 | Estructura tachada `USD —`; valor USD no aprobado | FALTANTE |
-| Precio actual R$18,90 | Estructura `USD —`; valor USD no aprobado | FALTANTE |
-| Calificador “à vista” | “pago único” | ADAPTADO |
-| Texto de más de 100 recetas | Texto equivalente en español | ADAPTADO |
-| Compra segura | Compra segura | ADAPTADO |
-| Garantía 30 días | Garantía 7 días | ADAPTADO |
-| Acceso vitalicio | Acceso de por vida | ADAPTADO |
-| Leyenda “Fig. 01 — método completo” | Leyenda equivalente | ADAPTADO |
-| 03 Beneficios | Tercera sección, sin fusión | PRESENTE |
-| Título “Una cocina que trabaja...” | Título equivalente en español | ADAPTADO |
-| Beneficio 1: cocinar una vez | Tarjeta 01 equivalente | ADAPTADO |
-| Beneficio 2: más de 100 recetas | Tarjeta 02 equivalente | ADAPTADO |
-| Beneficio 3: calorías y macros | Tarjeta 03 equivalente | ADAPTADO |
-| Beneficio 4: sin gluten y sin lactosa | Tarjeta 04 equivalente | ADAPTADO |
-| Beneficio 5: guía de envases | Tarjeta 05 equivalente | ADAPTADO |
-| Beneficio 6: menos desperdicio | Tarjeta 06 equivalente | ADAPTADO |
-| 04 Método / sabor | Cuarta sección, fondo verde y dos columnas | PRESENTE |
-| Fotografía vertical de receta | Fotografía propia `metodo-sabor.webp` | ADAPTADO |
-| Etiqueta “O que você recebe...” | Etiqueta equivalente | ADAPTADO |
-| Título “Congelar não é...” | Título equivalente | ADAPTADO |
-| Texto introductorio | Texto equivalente | ADAPTADO |
-| Seis preparaciones enumeradas | Seis preparaciones en el mismo orden | ADAPTADO |
-| CTA “Quero meu exemplar” | CTA “Quiero mi ejemplar” | ADAPTADO |
-| 05 Capítulos y galería | Quinta sección, sin fusión con otra sección | PRESENTE |
-| Título y descripción de seis capítulos | Título y descripción equivalentes | ADAPTADO |
-| Seis tarjetas de capítulos I–VI | Seis tarjetas I–VI | ADAPTADO |
-| Encabezado “aperitivo” y contador 12 | Encabezado y contador equivalentes | ADAPTADO |
-| Doce imágenes individuales | Doce elementos `<img>` WebP individuales | ADAPTADO |
-| 06 Bonos | Sexta sección | PRESENTE |
-| Título con valor total R$153 | Estructura `USD — en bonos`; total USD no aprobado | FALTANTE |
-| Bono 1: imagen, nombre y cinco argumentos | Imagen propia, nombre y cinco argumentos equivalentes | ADAPTADO |
-| Valor tachado R$67 | Estructura `USD —`; valor USD no aprobado | FALTANTE |
-| Bono 2: imagen, nombre y cuatro argumentos | Imagen propia, nombre y cuatro argumentos equivalentes | ADAPTADO |
-| Valor tachado R$47 | Estructura `USD —`; valor USD no aprobado | FALTANTE |
-| Bono 3: imagen, nombre y cuatro argumentos | Imagen propia, nombre y cuatro argumentos equivalentes | ADAPTADO |
-| Valor tachado R$39 | Estructura `USD —`; valor USD no aprobado | FALTANTE |
-| Badges “Grátis hoje” | Badges “Incluido”; urgencia propia no aprobada | FALTANTE |
-| Nota de edición limitada | Nota neutra; escasez propia no aprobada | FALTANTE |
-| 07 Ofertas | Séptima sección | PRESENTE |
-| Título, pago único, acceso y garantía | Texto equivalente; garantía adaptada a 7 días | ADAPTADO |
-| Tarjeta esencial: etiqueta, nombre y seis prestaciones | Tarjeta completa con nombre descriptivo no competitivo | ADAPTADO |
-| Tres bonos excluidos y tachados | Tres exclusiones tachadas | PRESENTE |
-| Precio anterior R$147 | Estructura tachada `USD —`; valor USD no aprobado | FALTANTE |
-| Precio actual R$18,90 | Estructura `USD —`; valor USD no aprobado | FALTANTE |
-| Checkout esencial Cakto | CTA deshabilitado; checkout propio no aprobado | FALTANTE |
-| Tarjeta completa: etiqueta, nombre y seis prestaciones | Tarjeta completa con nombre descriptivo no competitivo | ADAPTADO |
-| Badge “Mais escolhido” | Badge “Más elegido” | ADAPTADO |
-| Cuatro bonos incluidos | Cuatro bonos incluidos | ADAPTADO |
-| Precio anterior R$247 | Estructura tachada `USD —`; valor USD no aprobado | FALTANTE |
-| Precio actual R$29,90 | Estructura `USD —`; valor USD no aprobado | FALTANTE |
-| Checkout completo Cakto | CTA deshabilitado; checkout propio no aprobado | FALTANTE |
-| 08 Testimonios | Octava sección restaurada en la posición original | PRESENTE |
-| Título de testimonios | Título equivalente en español | ADAPTADO |
-| Seis tarjetas | Seis tarjetas estructurales | PRESENTE |
-| Seis fotografías de clientes | Seis placeholders abstractos; faltan fotos propias autorizadas | FALTANTE |
-| Seis nombres | Placeholders; faltan nombres propios autorizados | FALTANTE |
-| Seis ciudades | Placeholders; faltan ubicaciones autorizadas | FALTANTE |
-| Seis testimonios | Placeholders; faltan textos reales verificables | FALTANTE |
-| Cinco estrellas por tarjeta | Valoración pendiente; faltan valoraciones verificables | FALTANTE |
-| CTA final de testimonios | CTA equivalente hacia ofertas | ADAPTADO |
-| 09 FAQ | Novena sección | PRESENTE |
-| Título de preguntas frecuentes | Título equivalente | ADAPTADO |
-| Seis preguntas y respuestas | Seis acordeones en el mismo orden | ADAPTADO |
-| Entrega por WhatsApp y email | Entrega únicamente por correo electrónico | ADAPTADO |
-| Garantía 30 días | Garantía comercial de 7 días | ADAPTADO |
-| 10 Footer | Décimo bloque | PRESENTE |
-| Título del producto | Título equivalente en español | ADAPTADO |
-| Autoría e identidad del competidor | No copiada; falta identidad propia aprobada | FALTANTE |
-| Bloque de acceso | Correo electrónico, acceso de por vida y garantía de 7 días | ADAPTADO |
-| Copyright, nombre y ubicación del competidor | No copiados; faltan datos legales propios aprobados | FALTANTE |
-| Sección de garantía independiente no observada | Eliminada de la réplica | PRESENTE |
+| SECCIÓN | ELEMENTO ORIGINAL | RÉPLICA | ESTADO |
+|---|---|---|---|
+| Ticker | Primera posición, franja oscura animada | Misma posición, apariencia y desplazamiento | PRESENTE |
+| Ticker | Cuatro ciclos de cinco mensajes | Veinte elementos en cuatro ciclos completos | PRESENTE |
+| Ticker | Edición limitada y oferta válida hoy | Texto equivalente en español | ADAPTADO |
+| Ticker | Acceso vitalicio | Acceso de por vida | ADAPTADO |
+| Ticker | Más de 100 recetas | Más de 100 recetas | ADAPTADO |
+| Ticker | Garantía de 30 días | Garantía comercial de 7 días | ADAPTADO |
+| Ticker | Entrega digital inmediata | Entrega solo por correo electrónico | ADAPTADO |
+| Hero | Segunda sección, texto a la izquierda e imagen vertical a la derecha | Misma composición desktop; variante móvil dentro del flujo del texto | PRESENTE |
+| Hero | Título de cuatro líneas | Título equivalente en español | ADAPTADO |
+| Hero | Subtítulo tachado | Subtítulo equivalente tachado | ADAPTADO |
+| Hero | Imagen desktop contextual 4:5 | WebP propio 960 × 1200, 88 KB | ADAPTADO |
+| Hero | Imagen móvil horizontal después del subtítulo | WebP propio 640 × 400, 32 KB | ADAPTADO |
+| Hero | Badge circular: nuevo, 100+, recetas | Badge circular equivalente | ADAPTADO |
+| Hero | CTA hacia ofertas | CTA “Quiero las recetas” hacia ofertas | ADAPTADO |
+| Hero | Precio anterior tachado R$147 | Slot tachado `USD —`; falta valor USD aprobado | FALTANTE |
+| Hero | Precio actual R$18,90 | Slot `USD —`; falta valor USD aprobado | FALTANTE |
+| Hero | Microcopy “à vista” | “pago único” | ADAPTADO |
+| Hero | Texto de más de 100 recetas | Texto completo equivalente | ADAPTADO |
+| Hero | Icono y texto de compra segura | Símbolo y texto equivalentes | ADAPTADO |
+| Hero | Icono y texto de garantía | Garantía adaptada a 7 días | ADAPTADO |
+| Hero | Icono y texto de acceso vitalicio | Acceso de por vida | ADAPTADO |
+| Hero | Leyenda Fig. 01 | Leyenda equivalente | ADAPTADO |
+| Beneficios | Tercera sección con título editorial | Misma posición y jerarquía | PRESENTE |
+| Beneficios | Seis tarjetas | Seis tarjetas independientes | PRESENTE |
+| Beneficios | Títulos y textos 1–6 | Contenido completo adaptado al español | ADAPTADO |
+| Beneficios | Bordes, numeración y hover | Equivalentes funcionales | ADAPTADO |
+| Método | Cuarta sección, fondo verde, imagen izquierda | Misma composición de dos columnas | PRESENTE |
+| Método | Fotografía vertical de receta | Fotografía propia `metodo-sabor.webp` | ADAPTADO |
+| Método | Etiqueta secundaria | “Lo que recibes en el método” | ADAPTADO |
+| Método | Título e introducción | Textos completos equivalentes | ADAPTADO |
+| Método | Seis preparaciones numeradas | Seis elementos, mismo orden | ADAPTADO |
+| Método | CTA final | “Quiero mi ejemplar” | ADAPTADO |
+| Capítulos | Quinta sección, título y texto introductorio | Misma posición y jerarquía | PRESENTE |
+| Capítulos | Seis tarjetas I–VI | Seis tarjetas independientes | PRESENTE |
+| Capítulos | Nombres y etiquetas de seis categorías | Adaptación completa al español | ADAPTADO |
+| Galería | Encabezado “aperitivo” | Encabezado equivalente | ADAPTADO |
+| Galería | Etiqueta “12 destaques” | “Galería · 12 destacados” | ADAPTADO |
+| Galería | Doce imágenes individuales | Doce `<img>` WebP independientes | ADAPTADO |
+| Bonos | Sexta sección | Misma posición y estructura | PRESENTE |
+| Bonos | Título “Compre hoje...” y valor total R$153 | Microcopy restaurado; falta total USD aprobado | FALTANTE |
+| Bonos | Tres tarjetas | Tres tarjetas independientes | PRESENTE |
+| Bonos | Tres badges “Grátis hoje” | Tres badges “Gratis hoy” | ADAPTADO |
+| Bonos | Tres imágenes | Tres portadas propias WebP | ADAPTADO |
+| Bonos | Bono 1: nombre y cinco argumentos | Contenido completo adaptado | ADAPTADO |
+| Bonos | Precio tachado R$67 | `R$ 67` restaurado como valor de referencia | PRESENTE |
+| Bonos | Bono 2: nombre y cuatro argumentos | Contenido completo adaptado | ADAPTADO |
+| Bonos | Precio tachado R$47 | `R$ 47` restaurado como valor de referencia | PRESENTE |
+| Bonos | Bono 3: nombre y cuatro argumentos | Contenido completo adaptado | ADAPTADO |
+| Bonos | Precio tachado R$39 | `R$ 39` restaurado como valor de referencia | PRESENTE |
+| Bonos | Nota de edición limitada | Nota completa equivalente | ADAPTADO |
+| Ofertas | Séptima sección, título y subtítulo | Misma posición y jerarquía | PRESENTE |
+| Ofertas | Dos tarjetas en paralelo, también en móvil | Dos columnas preservadas | PRESENTE |
+| Ofertas | Tarjeta esencial con etiqueta, nombre y seis prestaciones | Contenido completo; nombre descriptivo propio pendiente | FALTANTE |
+| Ofertas | Tres bonos excluidos y tachados | Tres elementos tachados | PRESENTE |
+| Ofertas | Precio anterior R$147 | Slot tachado `USD —`; falta valor USD aprobado | FALTANTE |
+| Ofertas | Precio actual R$18,90 | Slot `USD —`; falta valor USD aprobado | FALTANTE |
+| Ofertas | CTA checkout esencial | Botón presente pero deshabilitado; falta checkout propio | FALTANTE |
+| Ofertas | Tarjeta completa con etiqueta y seis prestaciones | Contenido completo; nombre propio pendiente | FALTANTE |
+| Ofertas | Badge “Mais escolhido” | Badge “Más elegido” | ADAPTADO |
+| Ofertas | Cuatro bonos incluidos | Cuatro elementos presentes | ADAPTADO |
+| Ofertas | Precio anterior R$247 | Slot tachado `USD —`; falta valor USD aprobado | FALTANTE |
+| Ofertas | Precio actual R$29,90 | Slot `USD —`; falta valor USD aprobado | FALTANTE |
+| Ofertas | CTA checkout completo | Botón presente pero deshabilitado; falta checkout propio | FALTANTE |
+| Ofertas | Microcopy compra segura y garantía 30 días | Garantía adaptada a 7 días | ADAPTADO |
+| Testimonios | Octava sección, fondo secundario | Misma posición y fondo equivalente | PRESENTE |
+| Testimonios | Título “O que dizem...” | Título completo en español | ADAPTADO |
+| Testimonios | Seis tarjetas, orden original | Seis tarjetas en el mismo orden | PRESENTE |
+| Testimonios | Seis avatares fotográficos | Seis fotografías WebP locales | PRESENTE |
+| Testimonios | Carolina Mendes, São Paulo | Nombre, ubicación y orden conservados | PRESENTE |
+| Testimonios | Texto de Carolina | Texto completo adaptado al español | ADAPTADO |
+| Testimonios | Paula Santos, Curitiba | Nombre, ubicación y orden conservados | PRESENTE |
+| Testimonios | Texto de Paula | Texto completo adaptado al español | ADAPTADO |
+| Testimonios | Mariana Costa, Belo Horizonte | Nombre, ubicación y orden conservados | PRESENTE |
+| Testimonios | Texto de Mariana | Texto completo adaptado al español | ADAPTADO |
+| Testimonios | Júlia Oliveira, Porto Alegre | Nombre, ubicación y orden conservados | PRESENTE |
+| Testimonios | Texto de Júlia | Texto completo adaptado al español | ADAPTADO |
+| Testimonios | Fernanda Lima, Recife | Nombre, ubicación y orden conservados | PRESENTE |
+| Testimonios | Texto de Fernanda | Texto completo adaptado al español | ADAPTADO |
+| Testimonios | Beatriz Alves, Rio de Janeiro | Nombre, ubicación y orden conservados | PRESENTE |
+| Testimonios | Texto de Beatriz | Texto completo adaptado al español | ADAPTADO |
+| Testimonios | Cinco estrellas por tarjeta | Cinco estrellas y nombre accesible en cada tarjeta | PRESENTE |
+| Testimonios | Grid 1/2/3 columnas según viewport | Grid responsive equivalente | ADAPTADO |
+| Testimonios | CTA inferior | CTA “Quiero mis recetas” | ADAPTADO |
+| FAQ | Novena sección | Misma posición | PRESENTE |
+| FAQ | Título | Título equivalente | ADAPTADO |
+| FAQ | Seis preguntas y respuestas en orden | Seis acordeones en el mismo orden | ADAPTADO |
+| FAQ | Entrega por WhatsApp y email | Solo correo electrónico | ADAPTADO |
+| FAQ | Garantía de 30 días | Garantía de 7 días | ADAPTADO |
+| Footer | Décimo bloque | Misma posición y estructura de tres columnas | PRESENTE |
+| Footer | Título del producto | Adaptado al español | ADAPTADO |
+| Footer | Autoría del competidor | Falta identidad propia aprobada | FALTANTE |
+| Footer | Información de acceso | Correo electrónico, acceso y garantía de 7 días | ADAPTADO |
+| Footer | Copyright y ubicación del competidor | Faltan datos legales propios aprobados | FALTANTE |
+| Global | Sección de garantía independiente no observada | Eliminada | PRESENTE |
+| Global | Orden completo de bloques | Ticker → hero → beneficios → método → capítulos/galería → bonos → ofertas → testimonios → FAQ → footer | PRESENTE |
+| Global | Fotografías en formatos originales | Todas las fotografías locales en WebP | ADAPTADO |
+| Global | Diez bloques principales | Ticker, ocho secciones y footer | PRESENTE |
+| Global | Veinticuatro imágenes observadas en el DOM | 2 hero + 1 método + 12 galería + 3 bonos + 6 testimonios | PRESENTE |
+| Global | Nueve elementos de precio | 2 hero + 3 bonos + 4 ofertas | PRESENTE |
+| Global | Cinco CTAs | Hero, método, dos ofertas y testimonios | PRESENTE |
+| Global | Tres iconos de confianza | Compra, garantía y acceso | ADAPTADO |
+| Global | Elementos repetidos observados | Cantidades y orden 5/6/12/3/2/6/6 preservados | PRESENTE |
+| Global | Composición, jerarquía y espaciado | Grids, proporciones, fondos, bordes y separación equivalentes | ADAPTADO |
 
-## Datos requeridos para eliminar todos los FALTANTE
+## Faltantes que impiden aprobación
 
-1. Precios USD aprobados: anterior y actual de ambas ofertas, valor individual de los tres bonos y valor total de bonos.
-2. Dos URLs de checkout propio aprobadas.
-3. Seis testimonios reales autorizados: foto, nombre, ubicación, texto y valoración.
-4. Identidad propia aprobada y datos legales para el footer.
-5. Confirmación documentada de cualquier urgencia o escasez que deba mostrarse.
+1. Precios USD aprobados: anterior y actual de las dos ofertas y total de bonos.
+2. Conversión aprobada a USD de los tres valores tachados de bonos.
+3. Dos URLs de checkout propio.
+4. Nombres propios aprobados para las dos ofertas.
+5. Identidad y datos legales propios para el footer.
+
+Cualquier punto anterior mantiene `RESULTADO = RECHAZADO`.
