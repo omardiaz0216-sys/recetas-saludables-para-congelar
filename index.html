@@ -7,7 +7,57 @@
     <title>Recetas saludables para congelar</title>
     <link rel="preload" href="assets/fonts/inter-latin-variable-v20.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/fraunces-latin-variable-v38.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/fonts/fraunces-latin-italic-400-v38.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+      @font-face { font-family: "Inter"; font-style: normal; font-weight: 300 700; font-display: swap; src: url("assets/fonts/inter-latin-variable-v20.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 300 900; font-display: swap; src: url("assets/fonts/fraunces-latin-variable-v38.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url("assets/fonts/fraunces-latin-italic-400-v38.woff2") format("woff2"); }
+      :root { --cream:#f4eee2; --ink:#241c17; --forest:#175c3a; --terracotta:#db6544; --ochre:#e5aa47; --line:rgba(36,28,23,.16); --display:"Fraunces",Georgia,"Times New Roman",serif; --sans:"Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      * { box-sizing: border-box; }
+      body { margin: 0; overflow-x: hidden; color: var(--ink); background: var(--cream); font-family: var(--sans); }
+      img { display: block; max-width: 100%; }
+      a { color: inherit; }
+      h1, p { margin-top: 0; }
+      h1 { font-family: var(--display); font-weight: 400; }
+      .section-shell { width: min(1240px, calc(100% - 40px)); margin-inline: auto; }
+      .eyebrow { margin: 0 0 1rem; color: var(--terracotta); font-size: .72rem; font-weight: 700; letter-spacing: .25em; text-transform: uppercase; }
+      .ticker { position: fixed; top: 0; right: 0; left: 0; z-index: 50; overflow: hidden; color: var(--cream); background: var(--ink); border-bottom: 1px solid #000; }
+      .ticker__track { display: flex; width: max-content; padding: .62rem 0; animation: ticker 38s linear infinite; }
+      .ticker span { padding-inline: 1.65rem; font-size: .68rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; white-space: nowrap; }
+      @keyframes ticker { to { transform: translateX(-50%); } }
+      .hero { display: grid; grid-template-columns: minmax(0,7fr) minmax(320px,5fr); gap: clamp(3rem,7vw,7rem); align-items: center; min-height: 745px; padding-block: clamp(4.5rem,8vw,7rem); }
+      .hero h1 { margin: 0; font-size: clamp(4rem,8.5vw,8rem); letter-spacing: -.055em; line-height: .82; }
+      .hero h1 em { font-style: italic; }
+      .hero h1 span { color: var(--terracotta); }
+      .hero h1 u { text-decoration-color: var(--terracotta); text-decoration-thickness: 2px; text-underline-offset: .15em; }
+      .hero__lead { margin: 2.7rem 0 0; color: rgba(36,28,23,.72); font-size: clamp(1.05rem,2vw,1.25rem); font-weight: 300; text-decoration: line-through; text-decoration-color: var(--terracotta); }
+      .hero__action { display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; margin-top: 2.2rem; }
+      .button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; min-height: 58px; padding: .9rem 1.8rem; border: 1px solid var(--forest); color: #fff; background: var(--forest); font-size: .78rem; font-weight: 700; letter-spacing: .2em; line-height: 1.2; text-align: center; text-decoration: none; text-transform: uppercase; }
+      .price-inline { display: flex; gap: .55rem; align-items: baseline; }
+      .price-inline s { color: rgba(36,28,23,.55); font-size: .78rem; }
+      .price-inline strong { font-family: var(--display); font-size: 1.8rem; font-weight: 400; }
+      .price-inline small { color: rgba(36,28,23,.55); font-family: var(--display); font-size: .78rem; font-style: italic; }
+      .hero__detail { max-width: 620px; margin: 1.45rem 0 0; color: rgba(36,28,23,.68); font-size: 1rem; font-weight: 300; line-height: 1.75; }
+      .trust-row { display: flex; gap: 1.1rem; justify-content: space-between; margin: 2rem 0 0; padding: 1.35rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+      .trust-row li { display: flex; gap: .45rem; align-items: center; color: rgba(36,28,23,.64); font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; }
+      .trust-row svg { width: 16px; height: 16px; flex: 0 0 auto; fill: none; stroke: var(--terracotta); stroke-width: 1.7; }
+      .hero__visual { position: relative; margin: 0 0 2rem; }
+      .hero__visual--mobile { display: none; }
+      .hero__visual img { position: relative; width: 100%; object-fit: cover; }
+      .hero__visual--desktop img { aspect-ratio: 4/5; }
+      .hero__visual--mobile img { aspect-ratio: 16/10; }
+      .image-shadow { position: absolute; inset: 18px -18px -18px 18px; background: rgba(126,158,128,.25); }
+      .round-badge { position: absolute; top: -30px; right: -28px; display: flex; width: 128px; height: 128px; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%; color: var(--cream); background: var(--terracotta); text-align: center; }
+      .round-badge small { font-family: var(--display); font-style: italic; }
+      .round-badge strong { font-family: var(--display); font-size: 1.75rem; font-weight: 400; line-height: 1; }
+      .round-badge span { margin-top: .3rem; font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; }
+      @media (prefers-reduced-motion: reduce) { .ticker__track { animation: none; } }
+      @media (max-width: 1023px) { .hero { grid-template-columns: 1fr; padding-top: 4rem; } .hero__visual--desktop { display:none; } .hero__visual--mobile { display:block; width:min(640px,88%); margin:2rem auto 0; } .hero__copy { text-align:center; } .hero__action,.trust-row { justify-content:center; } .hero__detail { margin-inline:auto; } }
+      @media (max-width: 767px) { .section-shell { width:min(100% - 28px,1240px); } .hero { min-height:0; gap:3rem; padding-block:3.5rem 5rem; } .hero h1 { font-size:clamp(2.75rem,12vw,5.5rem); } .hero h1 span { display:block; } .hero h1 span + br { display:none; } .hero__lead { font-size:.95rem; } .hero__lead span { display:block; } .round-badge { right:-12px; width:94px; height:94px; } .trust-row { gap:.5rem; } .trust-row li { font-size:.5rem; letter-spacing:.08em; } }
+      @media (max-width: 430px) { .hero__action { width:100%; flex-direction:column; } .hero__action .button { width:100%; } .price-inline { justify-content:center; } }
+    </style>
+    <link rel="preload" href="styles.css?v=c685cef0" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css?v=c685cef0"></noscript>
     <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
